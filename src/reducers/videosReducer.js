@@ -1,3 +1,9 @@
+// const initialState = {
+//     videos: []  
+// }
+
+
+
 const videosReducer = (state = {videos: [], requesting: true}, action) => {
     switch (action.type) {
         case "START_FETCHING_VIDEOS":
@@ -6,27 +12,34 @@ const videosReducer = (state = {videos: [], requesting: true}, action) => {
                 requesting: true
             }
             break;
+        case "START_ADDING_VIDEOS":
+            return {
+                ...state,
+                requesting: true
+            }
+            break;
         case "ADDING_VIDEOS":
-            return {
-                ...state,
-                requesting: false,
-                videos: [...action.videos]
-            }
-            break;
+                return {
+                    ...state,
+                    requesting: false,
+                    videos: [...action.videos]
+                }
+                break;
         case "ADDING_VIDEO":
-            //debugger
-            return {
-                ...state,
-                requesting: false,
-                videos: [...state.videos, action.video]
+                    // debugger
+                    console.log("ADDING_VIDEO ACTION")
+                    return {
+                        ...state,
+                        requesting: false,
+                        videos: [...state.videos, action.video]
+                    }
+            // break;
+            
+            default:
+                return state
+                break;
             }
-            break;
-    
-        default:
-            return state
-            break;
-    }
-}
-
-export default videosReducer
+        }
+        
+        export default videosReducer
 
