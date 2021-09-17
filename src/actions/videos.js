@@ -20,7 +20,7 @@ export const addVideo = (video) => {
         let params = { 
             video
         } 
-
+    //method to our back end is to post this data => database
         fetch("http://localhost:3001/videos", { 
             "method": "POST",
             "headers": {

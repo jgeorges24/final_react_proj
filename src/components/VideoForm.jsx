@@ -32,7 +32,7 @@ import  { addVideo } from "../actions/videos"
     }
 
 
-// call back function
+    
     handleChange = (e) => {
         // e.preventDefault();
         // debugger
@@ -43,13 +43,13 @@ import  { addVideo } from "../actions/videos"
         })
     }
     
-//     addVideo = (video) => {
-//         //debugger
-//        this.setState({
-//            videos: [...this.state.videos, video]
-//        })
+    //     addVideo = (video) => {
+    //         //debugger
+    //        this.setState({
+    //            videos: [...this.state.videos, video]
+    //        })
 
-//    }
+    //    }
 
     
 
@@ -68,6 +68,7 @@ import  { addVideo } from "../actions/videos"
                     <br></br>
                     <lable htmlFor="rapper">Rapper Name</lable>
                     <input onChange={this.handleChange} type="text" name="rapper" id="rapper" value={this.state.rapper}/>
+                    <br></br>
                     <lable htmlFor="cover_art">Cover Art url</lable>
                     <input onChange={this.handleChange} type="text" name="cover_art" id="cover_art" value={this.state.cover_art}/>
                     <br></br>

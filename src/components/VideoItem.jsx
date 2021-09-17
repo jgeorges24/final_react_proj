@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 
+//EACH VIDEO BEING MADE IS HERE AND if you want to edit each one thats being generated.
+
+//USING A FUNCTIONAL STATEMENT HELPED WITH MAKING EACH ITEM EASIRE TO MANAGE SEPARTLEY 
+
  const VideoItem = ({song, rapper, director, cover_art}) => {
     
-//   const [likes,setLikes] = useState(0)
+  const [likes,setLikes] = useState(0)
     
 
         return (
@@ -13,13 +17,17 @@ import React, { useState } from 'react'
             <p>DIRECTOR: {director}</p>
             <br></br>
             <img src={cover_art} alt="cover art"/> 
-            {/* <br></br>
+
+
+            <br></br>
             <button onClick={()=> setLikes(likes+35)}>{likes}</button>
-            <br></br> */}
-            {/* <p>CAMP: {this.props.rapper.camp}</p> */}
+            <br></br>
+            
+            
         </div>
         )
      
 }
 
-export default VideoItem
+export default VideoItem 
+{/* {/* {/* <p>CAMP: {this.props.rapper.camp}</p> */}
