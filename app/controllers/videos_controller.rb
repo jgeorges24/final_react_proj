@@ -2,8 +2,8 @@ class VideosController < ApplicationController
 
     def index
 
-        videos = Video.all
-        render json: videos
+        videos = Video.all.order(id: :desc)
+        render json: videos, except: [:created_at, :updated_at]
 
 
     end
