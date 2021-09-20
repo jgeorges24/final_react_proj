@@ -13,9 +13,17 @@
   }
 }
 
+
+/* FORM CSS */
 .v_form {
-  background-color: red;
-  color: chocolate;
+  /* background-color: red; */
+  color: rgb(0, 0, 0);
+  background-image: url(https://bit.ly/2XzilvP);
+  background-blend-mode:difference;
+  background-size:auto;
+  
+  box-sizing: border-box;
+  
 }
 
 .App-header{
@@ -23,12 +31,6 @@
   color: chocolate;
 }
 
-
-.videos_form {
-
-  color: red;
-
-}
 
 .App-header {
   background-color: #282c34;

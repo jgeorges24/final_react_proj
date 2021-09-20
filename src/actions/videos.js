@@ -1,5 +1,4 @@
-
-
+// this action is responsible for our fetch call back end api method 
 export const fetchVideos = () => {
 
     return dispatch => {
@@ -13,6 +12,7 @@ export const fetchVideos = () => {
 
 }
 
+// this action is responsible for our posting method 
 export const addVideo = (video) => {
     return dispatch => {
         // debugger
@@ -28,7 +28,8 @@ export const addVideo = (video) => {
                 "Content-Type": "application/json"
             },
 
-            "body": JSON.stringify(params)
+            "body": JSON.stringify(params) 
+            // or ({video}) can be replaced by (params) cleaner 
         })
         .then(resp => resp.json())
         .then(video => {

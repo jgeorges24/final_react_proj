@@ -7,10 +7,11 @@ import React, { useState } from 'react'
  const VideoItem = ({song, rapper, director, cover_art}) => {
     
   const [likes,setLikes] = useState(0)
+  
     
 
         return (
-            <div id="v_item" className="v_item">
+            <div id="v_item" className="v_item" style={{backgroundColor: 'Chartreuse'}}>
             
             <h4>RAPPER NAME: {rapper}</h4>
             <p>SONG: {song}</p>

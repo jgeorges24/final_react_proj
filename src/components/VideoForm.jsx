@@ -14,20 +14,19 @@ import  { addVideo } from "../actions/videos"
             cover_art: ""
         }
     
-    //must connect this to the store to add the instance 
-    handleSubmit = (e) => {
-        //this is the payload
-        console.log(this.state, "these are the props")
-        e.preventDefault();
-        // debugger
-       this.props.addVideo(this.state)
-       
-        this.setState({
-            director: "",
-            song: "",
-            rapper:"",
-            cover_art: ""
-        })
+        handleSubmit = (e) => {
+            //this is the payload
+            console.log(this.state, "these are the props")
+            e.preventDefault();
+            // debugger
+            this.props.addVideo(this.state)
+        
+                this.setState({
+                    director: "",
+                    song: "",
+                    rapper:"",
+                    cover_art: ""
+                })
 
     }
 
@@ -46,7 +45,7 @@ import  { addVideo } from "../actions/videos"
     render() {
             
         return (
-            <div className="v_form" id="videos_form" style={{backgroundColor: "yellow"}}>
+            <div className="v_form" id="v_form" style={{backgroundColor: "yellow"}}>
            
             
             <h2>video form below</h2>
