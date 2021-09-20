@@ -7,12 +7,14 @@
 const videosReducer = (state = {videos: [], requesting: true}, action) => {
     switch (action.type) {
         case "START_FETCHING_VIDEOS":
+            console.log("START_FETCHING_VIDEOS")
             return {
                 ...state,
                 requesting: true
             }
             break;
         case "START_ADDING_VIDEOS":
+            console.log("START_ADDING_VIDEOS")
             return {
                 ...state,
                 requesting: true

@@ -10,13 +10,13 @@ import React, { useState } from 'react'
     
 
         return (
-            <div>
+            <div id="v_item" className="v_item">
             
             <h4>RAPPER NAME: {rapper}</h4>
             <p>SONG: {song}</p>
             <p>DIRECTOR: {director}</p>
             <br></br>
-            <img src={cover_art} alt="cover art"/> 
+            <img src={cover_art} alt="cover art" width="400" height="400"/> 
 
 
             <br></br>

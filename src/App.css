@@ -13,12 +13,15 @@
   }
 }
 
-.videos_container {
+.v_form {
   background-color: red;
   color: chocolate;
 }
 
-
+.App-header{
+  background-color: red;
+  color: chocolate;
+}
 
 
 .videos_form {

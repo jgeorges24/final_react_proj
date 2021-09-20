@@ -43,22 +43,14 @@ import  { addVideo } from "../actions/videos"
         })
     }
     
-    //     addVideo = (video) => {
-    //         //debugger
-    //        this.setState({
-    //            videos: [...this.state.videos, video]
-    //        })
-
-    //    }
-
-    
-
     render() {
             
         return (
-            <div className="container" id="videos_form">
+            <div className="v_form" id="videos_form" style={{backgroundColor: "yellow"}}>
+           
+            
             <h2>video form below</h2>
-                <form onSubmit={this.handleSubmit}>
+                <form id="v_form" classname="v_form" onSubmit={this.handleSubmit}>
                     <lable htmlFor="director">Name of director</lable>
                     <input onChange={this.handleChange} type="text" name="director" id="director" value={this.state.director}/>
                     
@@ -70,7 +62,7 @@ import  { addVideo } from "../actions/videos"
                     <input onChange={this.handleChange} type="text" name="rapper" id="rapper" value={this.state.rapper}/>
                     <br></br>
                     <lable htmlFor="cover_art">Cover Art url</lable>
-                    <input onChange={this.handleChange} type="text" name="cover_art" id="cover_art" value={this.state.cover_art}/>
+                    <input onChange={this.handleChange} type="url" name="cover_art" id="cover_art" value={this.state.cover_art}/>
                     <br></br>
                     <button>add music video</button>
                 </form>
