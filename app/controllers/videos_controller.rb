@@ -14,7 +14,8 @@ class VideosController < ApplicationController
         video = Video.find(params[:id])
 
         if video.update(video_params)
-            render json: Video.all.to_json(:include => :rapper)
+            render json: Video.all
+            # render json: Video.all.to_json(:include => :rapper)
         else
             
         end
@@ -28,7 +29,7 @@ class VideosController < ApplicationController
 
         video = Video.new(video_params)
          if video.save
-            render json: video
+            render json: video, status: :created, location: @video
          else
              render json: {error: "error This did not save my bro!"}
              console.log("error This did not save my bro!")
