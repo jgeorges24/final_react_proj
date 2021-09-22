@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
-import { fetchVideos, addVideo } from "../actions/videos"
+import { fetchVideos, addVideo, } from "../actions/videos"
 import VideoItem from "../components/VideoItem"
 import VideoForm from '../components/VideoForm'
 
@@ -24,7 +24,7 @@ export class Videos extends Component {
         return (
             <div className="center">
 
-                <VideoForm />
+                {/* <VideoForm /> */}
                 <br></br>
 
                 <h1> new entries </h1>
@@ -44,4 +44,5 @@ const mapStateToProps = ({videosReducer}) => {
     }
 }
 // this is how we connect the compentnt to the store 
-export default connect(mapStateToProps, { fetchVideos, addVideo })(Videos)
+export default connect(mapStateToProps, { fetchVideos, addVideo, })(Videos)
+//likeVideo

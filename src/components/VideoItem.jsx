@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 //EACH VIDEO BEING MADE IS HERE AND if you want to edit each one thats being generated.
 
@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 
  const VideoItem = ({song, rapper, director, cover_art}) => {
     
-  const [likes,setLikes] = useState(0)
+//   const [likes,setLikes] = useState(0)
   
     
 
@@ -18,11 +18,19 @@ import React, { useState } from 'react'
             <p>DIRECTOR: {director}</p>
             <br></br>
             <img src={cover_art} alt="cover art" width="400" height="400"/> 
+            <button onClick="">likes
+
+            </button> 
 
 
-            <br></br>
+
+
+
+
+
+            {/* <br></br>
             <button onClick={()=> setLikes(likes+35)}>{likes}</button>
-            <br></br>
+            <br></br> */}
             
             
         </div>

@@ -19,6 +19,10 @@ export const addVideo = (video) => {
         dispatch({type: "START_ADDING_VIDEO"})
         let params = { 
             video
+            // video: {
+            //     likes: video.likes+1
+            // }
+            
         } 
     //method to our back end is to post this data => database
         fetch("http://localhost:3001/videos", { 
@@ -38,3 +42,5 @@ export const addVideo = (video) => {
     }
 
 }
+
+
